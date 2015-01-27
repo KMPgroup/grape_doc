@@ -6,6 +6,19 @@ module GrapeDoc
       documents = resource.documents.map do |document|
         path = "#### #{document.http_method} #{document.path}\n\n"
         description = "#{document.description}\n\n"
+
+        response =
+            if document.description.split("::")[1]
+              eval(document.description.split("::")[1]).map do |parameter|
+
+                param = " - #{parameter[0]}"
+                param += " (#{parameter[1][:type]})" if parameter[1][:type]
+                param += " : #{parameter[1][:desc]}" if parameter[1][:desc]
+
+              end.join if document.description.split("::")[1]
+            else
+              []
+            end
         
         parameters = document.params.map do |parameter| 
           next if parameter.field.nil? or parameter.field.empty?
@@ -19,6 +32,8 @@ module GrapeDoc
         
         route = "#{path} #{description}"
         route += "**Parameters:** \n\n\n#{parameters}" if parameters
+        route += "\n\n"
+        route += "**Response:** \n\n\n#{response}" if response
         route += "\n\n"
 
       end.join
