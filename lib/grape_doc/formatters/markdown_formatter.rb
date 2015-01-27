@@ -14,6 +14,7 @@ module GrapeDoc
                 param = " - #{parameter[0]}"
                 param += " (#{parameter[1][:type]})" if parameter[1][:type]
                 param += " : #{parameter[1][:desc]}" if parameter[1][:desc]
+                param += "\n\n"
 
               end.join if document.description.split("::")[1]
             else
