@@ -5,7 +5,7 @@ module GrapeDoc
       
       documents = resource.documents.map do |document|
         path = "#### #{document.http_method} #{document.path}\n\n"
-        description = "#{document.description}\n\n"
+        description = "#{document.description.split("::")[0]}\n\n"
 
         response =
             if document.description.split("::")[1]

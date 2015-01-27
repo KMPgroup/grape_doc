@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7866ee3d-fa4d-4f89-a4a7-14b923482f92" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/grape_doc/formatters/markdown_formatter.rb" afterPath="$PROJECT_DIR$/lib/grape_doc/formatters/markdown_formatter.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/grape_doc/version.rb" afterPath="$PROJECT_DIR$/lib/grape_doc/version.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="grape_doc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/lib/grape_doc/formatters/markdown_formatter.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="765">
-              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+              <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -265,7 +267,7 @@
     <entry file="file://$PROJECT_DIR$/lib/grape_doc/formatters/markdown_formatter.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="765">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
           <folding />
         </state>
       </provider>
